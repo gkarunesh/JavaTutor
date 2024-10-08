@@ -1,3 +1,6 @@
+import java.nio.charset.Charset;
+import java.sql.SQLOutput;
+
 public class UnaryOperators {
     public static void main (String[] args) {
         int a=10;
@@ -21,5 +24,39 @@ public class UnaryOperators {
             }
             System.out.println(i+" ");
         }
-    }
+
+System.out.println("---for loop example---");
+
+        for(int i=1; i<=5; i++){
+            System.out.println(i);
+        }
+        System.out.println("---While loop example---");
+        int n=1;
+        while(n<=5){
+            System.out.println(n);
+            n++;
+        }
+        System.out.println("---String example---");
+
+        byte[] b_array={71, 101, 101, 107, 115};
+        Charset cs = Charset.defaultCharset();
+        System.out.println(cs);
+        String s_byte_char = new String(b_array, cs);
+        System.out.println(s_byte_char);
+
+
+        System.out.println("---String Character example---");
+        char[] char_arr ={'G', 'e', 'e', 'k', 's'};
+        String s=new String(char_arr);
+        //System.out.println(s);
+        //System.out.println(s.length());
+        System.out.println(s.charAt(2));
+
+        String s1= new String("Java"); //2 object
+        String s2= "Java"; //1 object
+
+        String m = "Money";
+        int output = m.indexOf('n');
+        System.out.println(output);
+     }
 }
