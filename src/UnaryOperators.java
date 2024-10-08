@@ -58,5 +58,23 @@ System.out.println("---for loop example---");
         String m = "Money";
         int output = m.indexOf('n');
         System.out.println(output);
-     }
+
+        System.out.println("---Reverse in String---");
+        String str = "i.like.this.program.very.much";
+        String rev="";
+        for(int i=str.length()-1; i>=0; i--){
+            rev +=str.charAt(i);
+        }
+        System.out.print(rev);
+
+        System.out.println("---For each loop---");
+        int arr[]={10,54,21,35,42,16,84};
+        for(int ele : arr){
+            System.out.println(ele);
+        }
+        System.out.println("---Maximum---");
+            int marks[]={51,64,83,26,80};
+            int highest= maximum(marks);
+        }
+    }
 }
