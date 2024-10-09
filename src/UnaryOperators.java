@@ -65,16 +65,18 @@ System.out.println("---for loop example---");
         for(int i=str.length()-1; i>=0; i--){
             rev +=str.charAt(i);
         }
-        System.out.print(rev);
+        System.out.println(rev);
+
+        System.out.println("---Array---");
+        int arr[]= {2,5,6,2,4,8,6,4,9,0};
+        for(int i=0; i<arr.length; i++){
+            System.out.println(arr[i]);
+        }
 
         System.out.println("---For each loop---");
-        int arr[]={10,54,21,35,42,16,84};
-        for(int ele : arr){
+        int myArr[]={10,54,21,35,42,16,84};
+        for(int ele : myArr){
             System.out.println(ele);
-        }
-        System.out.println("---Maximum---");
-            int marks[]={51,64,83,26,80};
-            int highest= maximum(marks);
         }
     }
 }
