@@ -46,4 +46,15 @@ public class UserBean {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
+    @Override
+    public String toString() {
+        return "UserBean{" +
+                "userId='" + userId + '\'' +
+                ", username='" + username + '\'' +
+                ", accountNo='" + accountNo + '\'' +
+                ", password='" + password + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }
